@@ -107,12 +107,15 @@ public class Translator {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        //switch (ins) {
-            //case "add":
-                String remains = line;
+        String remains = line;
                 r = scanInt();
                 String string1 = scan();
-               // while (line.length() > 0)
+
+        /*Test conditions for instantiating Instruction classes with reflexion
+        Instead of the switch, the ins string is used as the prefix to an Instruction subclass,
+        which is called with Class.forName. The arguments are determined by parseint attempts.
+        If none of the conditions are met, the default (String.class, String.class) arguments are used.
+         */
         if (string1.length() != 0) {
 
 
