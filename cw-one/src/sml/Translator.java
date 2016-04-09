@@ -14,7 +14,7 @@ import java.util.Set;
  */
 public class Translator {
 
-    private static final String PATH = "/Users/Tom/Documents/SDP/SDP_Portfolio/cw-one/src/";
+    private static final String PATH = "/Users/keith/Courses/sdp/2016/SDP2016/SML/src/";
     // word + line is the part of the current line that's not yet processed
     // word has no whitespace
     // If word and line are not empty, line begins with whitespace
